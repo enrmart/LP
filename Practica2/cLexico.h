@@ -1,0 +1,15 @@
+#define PROCEDURE 258
+#define RUN 259
+#define START 260
+#define STOP 261
+#define WAIT 262
+#define SET 263
+#define ON 264
+#define OFF 265
+#define UNTIL 266
+#define WHILE 267
+#define IDENT 268
+#define SIGNL 269
+#define INT 270
+#define PRINT 271
+#define CADENA 272

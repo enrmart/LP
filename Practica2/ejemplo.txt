@@ -1,0 +1,32 @@
+procedure light1on
+  wait until signal sw1on ,
+  set on light1
+;
+
+procedure light1off
+  wait until signal sw1off ,
+  set off light1 ,
+  print "HOLA BUENOS DIAS"
+;
+
+procedure timedLight1
+  wait until signal signal1 ,
+  set on light1 ,
+  start timer1 10 ,
+  wait while timer1 ,
+  set off light1 
+;
+
+procedure light2onerror
+  run wait while signal sw1off ,
+  set on light2 ,
+  stop timer2
+;
+
+
+
+run light1on ,
+run light1off ,
+run timedLight1 ,
+run light2onerror
+.
